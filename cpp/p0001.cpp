@@ -9,7 +9,7 @@ https://projecteuler.net/archives
 
 #include <iostream>
 
-int problem1()
+int main()
 {
 	//initalize variables
 	int limitNumber;
@@ -18,9 +18,8 @@ int problem1()
 	int sumOfMultiples = 0;
 
 	//prompt user for the max number
-	std::cout << "Enter the maximum number: ";
+	std::cout << "Enter the Maximum Number: ";
 	std::cin >> limitNumber;
-	std::cout << std::endl;
 
 	//take the multiples and divide them to see if they are greater or lower than the max number if they are lower then raise the value by 1 to make it higher than the max
 	int maxFirstMultiple = (round(limitNumber / firstMultiple) * firstMultiple >= limitNumber ? limitNumber / firstMultiple : limitNumber / firstMultiple + 1);
@@ -42,7 +41,7 @@ int problem1()
 	}
 
 	//print out the sum for visibility
-	std::cout << std::endl << "Sum: " << sumOfMultiples << std::endl;
+	std::cout << "Sum: " << sumOfMultiples << std::endl;
 
 	return 0;
 }
