@@ -1,0 +1,18 @@
+Solutions to Project Euler
+Copyright Brandon Norsworthy 2019. All rights reserved.
+
+https://github.com/brandonnorsworthy/ProjectEuler
+https://projecteuler.net/archives
+
+Problem 0001: 233168
+Problem 0002: 4613732
+Problem 0003: 6857
+Problem 0004: 906609
+Problem 0005: 232792560
+Problem 0006: 25164150
+Problem 0007: 104743
+Problem 0008: 23514624000
+Problem 0009: 31875000
+Problem 0010: 142913828922
+
+These are not really to copy just to check if you don't want to use the verification on ProjectEuler, although it's pretty fun to see the verification checkmark after trying each time :)
