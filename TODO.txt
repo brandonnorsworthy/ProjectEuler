@@ -1,1 +1,2 @@
 fix cpp/p0003.cpp
+add comments to p0003-p0010.cpp problems
