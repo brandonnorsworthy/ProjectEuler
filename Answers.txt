@@ -14,5 +14,7 @@ Problem 0007: 104743
 Problem 0008: 23514624000
 Problem 0009: 31875000
 Problem 0010: 142913828922
+Problem 0011: Not yet completed
+Problem 0012: 76576500
 
 These are not really to copy just to check if you don't want to use the verification on ProjectEuler, although it's pretty fun to see the verification checkmark after trying each time :)
