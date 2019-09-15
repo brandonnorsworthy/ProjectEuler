@@ -1,2 +1,8 @@
 fix cpp/p0003.cpp
-add comments to p0003-p0010.cpp problems
+add comments to p0003-p0010.cpp
+
+add p0006.cpp - p00011.cpp to /cpp
+
+complete 0011.cpp
+complete p0015.cpp
+finish p0016.cpp
