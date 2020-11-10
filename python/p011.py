@@ -24,36 +24,36 @@ number = [[8,2,22,97,38,15,0,40,0,75,4,5,7,78,52,12,50,77,91,8],
 [1,70,54,71,83,51,54,69,16,92,33,48,61,43,52,1,89,19,67,48]]
 
 greatestproduct = 0
-combo = [0,0,0,0]
+# combo = [0,0,0,0]
 
 #row of 4
 for y in range(20):
     for x in range(16):
         product = number[y][x] * number[y][x + 1] * number[y][x + 2] * number[y][x + 3]
         if product > greatestproduct:
-            combo = [number[y][x], number[y][x + 1], number[y][x + 2], number[y][x + 3]]
+            # combo = [number[y][x], number[y][x + 1], number[y][x + 2], number[y][x + 3]]
             greatestproduct = product
 #colum of 4
 for x in range(20):
     for y in range(16):
         product = number[y][x] * number[y + 1][x] * number[y + 2][x] * number[y + 3][x]
         if product > greatestproduct:
-            combo = [number[y][x], number[y + 1][x], number[y + 2][x], number[y + 3][x]]
+            # combo = [number[y][x], number[y + 1][x], number[y + 2][x], number[y + 3][x]]
             greatestproduct = product
 #diagnal
 for y in range(16):
     for x in range(16):
         product = number[y][x] * number[y + 1][x + 1] * number[y + 2][x + 2] * number[y + 3][x + 3]
         if product > greatestproduct:
-            combo = [number[y][x], number[y + 1][x + 1], number[y + 2][x + 2], number[y + 3][x + 3]]
+            # combo = [number[y][x], number[y + 1][x + 1], number[y + 2][x + 2], number[y + 3][x + 3]]
             greatestproduct = product
 #diagnal reverse
 for y in range(3,20):
-    for x in range(3,20):
-        product = number[y - 3][x - 3] * number[y - 2][x - 2] * number[y - 1][x - 1] * number[y][x]
+    for x in range(16):
+        product = number[y - 3][x + 3] * number[y - 2][x + 2] * number[y - 1][x + 1] * number[y][x]
         if product > greatestproduct:
-            combo = [number[y - 3][x - 3], number[y - 2][x - 2], number[y - 1][x - 1], number[y][x]]
+            # combo = [number[y - 3][x + 3], number[y - 2][x + 2], number[y - 1][x + 1], number[y][x]]
             greatestproduct = product
 
-print(combo)
+# print(combo)
 print(greatestproduct)
