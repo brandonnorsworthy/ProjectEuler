@@ -2,12 +2,12 @@
 #How many such routes are there through a 20×20 grid?
 
 #you can only go down or right
-gridsize = 2
+gridsize = 20
 choices = 0
 
 def main():
     global choices
-    showLocaiton(0,0)
+    #showLocaiton(0,0)
     pathFinderX(0,0)
     print('# of choices:', choices)
 
@@ -35,30 +35,18 @@ def pathFinderX(locationX, locationY):
     global choices
     if atTheEdge(locationX):
         choices += 1
-        print('edge hit right: x', locationX, 'y', locationY)
-        showLocaiton(locationX, locationY)
-        pathFinderY(locationX, locationY)
-        return
     else:
-        locationX += 1
-        print('going right: x', locationX, 'y', locationY)
-        showLocaiton(locationX, locationY)
-        pathFinderX(locationX, locationY)
+        pathFinderX(locationX+1, locationY)
+        pathFinderY(locationX, locationY+1)
         
 
 def pathFinderY(locationX, locationY):
     global choices
     if atTheEdge(locationY):
         choices += 1
-        print('edge hit down: x', locationX, 'y', locationY)
-        showLocaiton(locationX, locationY)
-        return
     else:
-        locationY += 1
-        print('going down: x', locationX, 'y', locationY)
-        showLocaiton(locationX, locationY)
-        pathFinderX(locationX, locationY)
-        pathFinderY(locationX, locationY)
+        pathFinderY(locationX, locationY+1)
+        pathFinderX(locationX+1, locationY)
 
 def atTheEdge(location):
     global gridsize
